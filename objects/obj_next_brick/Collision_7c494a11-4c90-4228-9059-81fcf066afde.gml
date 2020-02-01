@@ -36,24 +36,24 @@ if(is_thrown)
 		newx = other.x - 128
 	} */
 
-	if (collision_line(other.bbox_left, other.bbox_top, other.bbox_left, other.bbox_top + 63, obj_next_brick, false, false) != noone)//Left
+	if (collision_line(other.bbox_left, other.bbox_top, other.bbox_left, other.bbox_top + 63, obj_next_brick, true, false) != noone)//Left
 	{
 		newx = other.x - 128
 		show_debug_message("LEFT")
 	}
-	else if (collision_line(other.bbox_left, other.bbox_top + 64, other.bbox_left + 64, other.bbox_top + 64, obj_next_brick, false, false) != noone)//Bottom Left
+	else if (collision_line(other.bbox_left, other.bbox_top + 64, other.bbox_left + 64, other.bbox_top + 64, obj_next_brick, true, false) != noone)//Bottom Left
 	{		
 		newx = other.x - 64
 		newy = other.y + 64
 		show_debug_message("BOTTOM LEFT")
 	}
-	else if (collision_line(other.bbox_left + 64, other.bbox_top + 64, other.bbox_left + 128, other.bbox_top + 64, obj_next_brick, false, false) != noone)//Bottom Right
+	else if (collision_line(other.bbox_left + 64, other.bbox_top + 64, other.bbox_left + 128, other.bbox_top + 64, obj_next_brick, true, false) != noone)//Bottom Right
 	{
 		newx = other.x + 64
 		newy = other.y + 64
 		show_debug_message("BOTTOM RIGHT")
 	}
-	else if (collision_line(other.bbox_left + 128, other.bbox_top + 63, other.bbox_left + 128, other.bbox_top, obj_next_brick, false, false) != noone) //Right
+	else if (collision_line(other.bbox_left + 128, other.bbox_top + 63, other.bbox_left + 128, other.bbox_top, obj_next_brick, true, false) != noone) //Right
 	{
 		newx = other.x + 128
 		show_debug_message("RIGHT")

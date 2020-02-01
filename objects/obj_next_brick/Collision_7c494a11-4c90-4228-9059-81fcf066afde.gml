@@ -5,12 +5,7 @@ if(is_thrown)
 {
 	instance_destroy()
 
-	//mitigates origin weirdness
-	update_true_coords()
-
 	var newx = other.x, newy = other.y
-
-	show_debug_message("x: " + string(x) + "\ntruex: " + string(truex) + "\nother.x: " + string(other.x))
 
 	//hitting from the right
 	if (x > other.x + 128) {
@@ -38,6 +33,23 @@ if(is_thrown)
 
 	new_brick.brick_type = brick_type
 	set_wall_brick_color(new_brick)
+	
+	//create the lists for dfs
+	var bricks_to_check = ds_list_create()
+	ds_list_add(bricks_to_check, new_brick)
+		
+	var bricks_checked = ds_list_create()
+	//ds_list_add(bricks_checked, new_brick)
+	
+	//holds list of bricks to delete
+	match_three(bricks_to_check, bricks_checked, 0)
+	
+	//delete matches
+	if (ds_list_size(bricks_checked) >= 3) {
+		for (var i = 0; i < ds_list_size(bricks_checked); i++) {
+			instance_destroy(ds_list_find_index(bricks_checked, i)) 
+		}
+	}
 
 	with (obj_brick_thrower) spawn_next_brick()
 

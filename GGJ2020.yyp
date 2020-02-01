@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "a7f64964-7d1c-43c1-9e52-8624db6606dc",
+            "Value": {
+                "id": "3e7a8e07-b68f-45be-a182-901142a67f63",
+                "resourcePath": "sounds\\sound_brick_placed\\sound_brick_placed.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "0daec608-e657-479d-81ad-4c69f87a5244",

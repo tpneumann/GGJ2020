@@ -16,7 +16,7 @@ radius = point_distance(x, y, 16, -95)
 phase = point_distance(x, y, 16, -95)
 
 //holds can throw
-can_throw = true
+global.can_throw = true
 
 //hold reference to next brick
 next_brick = 0

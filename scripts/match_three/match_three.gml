@@ -4,7 +4,7 @@
 //argument1: been checked
 //argument2: index
 
-show_debug_message("match_three " + string(argument2))
+//show_debug_message("match_three " + string(argument2))
 
 with (ds_list_find_value(argument0, argument2)) {
 
@@ -12,8 +12,6 @@ with (ds_list_find_value(argument0, argument2)) {
 
 	check = instance_place(x-1,y+1,obj_wall_brick)
 	check_match(argument0, argument1, check)
-	
-	show_debug_message("check: " + string(check))
 
 	check = instance_place(x,y-1,obj_wall_brick)
 	check_match(argument0, argument1, check)
@@ -35,8 +33,6 @@ with (ds_list_find_value(argument0, argument2)) {
 ds_list_add(argument1, id)
 
 if (ds_list_size(argument0) > argument2 + 1) {
-	
-	show_debug_message("to check: " + string(argument0))
 	
 	match_three(argument0, argument1, argument2 + 1)
 }

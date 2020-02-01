@@ -3,13 +3,16 @@
 
 if(is_thrown)
 {
+    
 	var newx = other.x, newy = other.y
-
+	
+	/*
 	show_debug_message("x: " + string(x) + ", y: " + string(y))
 	
 	show_debug_message("Other x: " +  string(other.x) + ", Other y: " + string(other.y))
 	show_debug_message("Other x2: " +  string(other.x+128) + ", Other y2: " + string(other.y+64))
 	show_debug_message("Other bbx: " +  string(other.bbox_left) + ", Other bby: " + string(other.bbox_top))
+	//*/
 
 	//hitting from the right
 	/*if (x > other.x + 128) {

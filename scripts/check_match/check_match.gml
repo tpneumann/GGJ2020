@@ -11,6 +11,7 @@ if (argument2 != noone) {
 		}
 	
 		if (!been_checked) {
+			show_debug_message("been checked x: " + string(argument2.x) + ", y: " + string(argument2.y))
 			ds_list_add(argument0, argument2)
 		}
 	}

@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_next_brick",
     "eventList": [
-        
+        {
+            "id": "7c494a11-4c90-4228-9059-81fcf066afde",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "f5a567c5-7f59-4747-8163-1d09e9fa4f17",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "666a4675-4e41-49e2-aa47-46df577c787a"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

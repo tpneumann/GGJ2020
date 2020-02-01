@@ -5,6 +5,13 @@ rotate_this_frame = (keyboard_check(vk_left) - keyboard_check(vk_right)) * 2
 
 image_angle += rotate_this_frame
 image_angle = clamp(image_angle, -50, 50)
+
+//next_brick.x = x + dcos(image_angle) * 16
+phase += rotate_this_frame
+next_brick.x = x + radius + dcos(phase)
+next_brick.y = y - radius + dcos(phase)
+
+
 next_brick.image_angle = image_angle
 
 if (keyboard_check(vk_space) && can_throw) {

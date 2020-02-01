@@ -9,7 +9,11 @@ next_brick_type = 1
 
 //hold reference to angle to rotate to
 rotation_angle = 0
+
 rotate_this_frame = 0
+
+//holds can throw
+can_throw = true
 
 //hold reference to next brick
 next_brick = 0

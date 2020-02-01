@@ -7,7 +7,7 @@ image_angle += rotate_this_frame
 image_angle = clamp(image_angle, -50, 50)
 next_brick.image_angle = image_angle
 
-if (keyboard_check(vk_space)) {
-	toss_brick()
+if (keyboard_check(vk_space) && can_throw) {
+	toss_brick()s
 }
 

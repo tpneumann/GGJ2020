@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "7e8c3394-69cd-4ab9-ac29-952a44bf90d5",
+            "Value": {
+                "id": "b9f44079-95c2-4e2d-9d41-6d90897dd17c",
+                "resourcePath": "sounds\\sound_brick_smashed\\sound_brick_smashed.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "93a3f9fd-fe4f-4b95-87c9-985b7b7cb264",
             "Value": {
                 "id": "77634931-0d9f-4a53-bed5-3370d0e61f66",

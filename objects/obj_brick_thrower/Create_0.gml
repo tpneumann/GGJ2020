@@ -12,6 +12,9 @@ rotation_angle = 0
 
 rotate_this_frame = 0
 
+radius = point_distance(x, y, 16, -95)
+phase = point_distance(x, y, 16, -95)
+
 //holds can throw
 can_throw = true
 

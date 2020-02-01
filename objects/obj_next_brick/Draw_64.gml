@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-spawn_next_brick()
 
+draw_circle(truex, truey, 3, false)

@@ -107,7 +107,9 @@ if(is_thrown)
 	
 	#endregion
 	
-	check_win()
+	if (check_win()) {
+		room_goto(rm_game_win)
+	}
 	
 	with (obj_brick_thrower) spawn_next_brick()
 

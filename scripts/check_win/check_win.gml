@@ -7,7 +7,8 @@ var odd_row = true
 for (var i = 0; i < 5; i++) {
 	if (odd_row) {	
 		for (var j = 0; j < 7; j++) {
-			if (!collision_point(x + 69 + (128*j), y + 69 + (64*i), obj_wall_brick, false, false)) {
+			if (!collision_point(69 + (128*j), 69 + (64*i), obj_wall_brick, false, false)) {
+				//show_debug_message("odd x: " + string(69 + (128*j)) + ", y: " + string(69 + (64*i)))
 				return false
 			}
 		}
@@ -15,7 +16,8 @@ for (var i = 0; i < 5; i++) {
 	
 	else {
 		for (var j = 0; j < 6; j++) {
-			if (!collision_point(x + 133 + (128*j), y + 69 + (64*i), obj_wall_brick, false, false)) {
+			if (!collision_point(133 + (128*j), 69 + (64*i), obj_wall_brick, false, false)) {
+				//show_debug_message("even x: " + string(133 + (128*j)) + ", y: " + string(69 + (64*i)))
 				return false
 			}
 		}

@@ -99,7 +99,13 @@ if(is_thrown)
 		placed_brick = false
 		for (var i = 0; i < ds_list_size(bricks_checked); i++) {
 			//show_debug_message("newtype: " + string(brick_type) + " desttype: " + string(ds_list_find_value(bricks_checked, i).brick_type))
-			instance_destroy(ds_list_find_value(bricks_checked, i)) 
+			var broke_brick = ds_list_find_value(bricks_checked, i)
+			show_debug_message("broke brick: " + string(broke_brick))
+			if (instance_exists(broke_brick)) {
+				instance_create_layer(broke_brick.x, broke_brick.y, "Instances", obj_brick_break)
+			}
+			
+			instance_destroy(broke_brick) 
 			audio_play_sound(sound_brick_smashed, 1, false)
 		}
 	}

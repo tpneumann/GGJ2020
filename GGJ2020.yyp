@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "4159c5ab-ac08-4f31-922b-5d9f9546568a",
+            "Value": {
+                "id": "9ceee1a9-e530-43ce-80b7-823eabbdeb93",
+                "resourcePath": "sprites\\spr_broke_brick\\spr_broke_brick.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4c2ad648-441b-453e-a0c9-0b01c17e8121",
             "Value": {
                 "id": "c64d574f-aab3-4d3a-a7a6-e08dde9635b9",
@@ -228,6 +236,14 @@
                 "id": "9394d36f-2233-4442-91b3-25f0cf91f512",
                 "resourcePath": "sounds\\sound_game_theme\\sound_game_theme.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "80d6ac4b-0b96-478c-ba77-4094a6fceeb2",
+            "Value": {
+                "id": "0dbaf3cd-6f28-4b5f-a680-407411c04f13",
+                "resourcePath": "sprites\\spr_brick_break\\spr_brick_break.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -452,6 +468,14 @@
                 "id": "a9b6aa1d-d8ab-4d1c-99f4-00215afdf604",
                 "resourcePath": "views\\d464c217-323f-41d3-b1b3-e9f942550359.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d6062f55-778f-44c4-98d7-86ea8cdbc568",
+            "Value": {
+                "id": "cb57b1eb-ed22-4e1a-82ea-a9e96b3bb64b",
+                "resourcePath": "objects\\obj_brick_break\\obj_brick_break.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -9,7 +9,9 @@
         "9f36e242-c36a-40dd-9c2a-f1583f4775a9",
         "ca1f6730-f940-4e0b-bf2a-f485a6c43007",
         "ee3d4d58-92fe-4d7a-aebe-8fb274d073aa",
-        "b5580d27-0f8f-4194-9c62-5c2ed400acab"
+        "b5580d27-0f8f-4194-9c62-5c2ed400acab",
+        "80d6ac4b-0b96-478c-ba77-4094a6fceeb2",
+        "4159c5ab-ac08-4f31-922b-5d9f9546568a"
     ],
     "filterType": "GMSprite",
     "folderName": "Bricks",

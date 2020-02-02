@@ -1,5 +1,5 @@
 {
-    "id": "f1909da5-66f7-43c8-82dd-4ee856f307f8",
+    "id": "ae9eefe9-a46e-4b66-b050-539fcd9d73b5",
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "sound_game_over",

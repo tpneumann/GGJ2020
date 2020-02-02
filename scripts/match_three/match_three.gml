@@ -8,9 +8,10 @@
 
 with (ds_list_find_value(argument0, argument2)) {
 
-	var check
+	/*var check
 	if ( !ds_exists(debug_check_positions, ds_type_list)) debug_check_positions = ds_list_create()
 	var target
+	//*/
 	//show_debug_message("x: " + string(x) + ", y: " + string(y))
 
 	var check1 = collision_point(x-30,y+20,obj_wall_brick, false, false)//Left

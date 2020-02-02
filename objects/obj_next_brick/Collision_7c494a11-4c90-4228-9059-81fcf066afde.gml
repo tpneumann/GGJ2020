@@ -123,6 +123,8 @@ if(is_thrown)
 		room_goto(rm_game_win)
 	}
 	
+	check_cracked()
+	
 	with (obj_brick_thrower) spawn_next_brick()
 
 }

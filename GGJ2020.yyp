@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "007d8366-1951-4cc4-9321-33a4aff4873c",
+            "Value": {
+                "id": "123e1576-e27b-427b-af9d-1a5d12b87082",
+                "resourcePath": "scripts\\check_match\\check_match.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "046a45d3-4ed4-4c6e-8f66-3051b04bacb8",
             "Value": {
                 "id": "4667f04a-1c30-40cc-ac60-7679de50c28b",
@@ -79,27 +87,11 @@
             }
         },
         {
-            "Key": "33f2ad99-9227-460b-bd47-3f0de9a52236",
-            "Value": {
-                "id": "7809b67c-788e-4782-96d9-ccc12d9b1af7",
-                "resourcePath": "sounds\\sound_game_theme\\sound_game_theme.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "3ea9d290-9aea-463d-8ef7-727b7bc6b10c",
             "Value": {
                 "id": "f6d8593d-fe6c-4ac6-a264-5b3dcfbb0d25",
                 "resourcePath": "views\\3ea9d290-9aea-463d-8ef7-727b7bc6b10c.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "4662eda9-7d45-4613-a83f-ccbfb39401f1",
-            "Value": {
-                "id": "b596ea10-ef2e-4865-8a50-6af9adb08c1b",
-                "resourcePath": "scripts\\update_true_coords\\update_true_coords.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -191,11 +183,11 @@
             }
         },
         {
-            "Key": "9cc3826c-32d6-4e73-9e68-fa06448b6af3",
+            "Key": "97dce189-d718-4c76-a3d9-775b24c91782",
             "Value": {
-                "id": "b6f8cc9c-25aa-4253-92a3-9395cad080e7",
-                "resourcePath": "sounds\\sound_title_theme\\sound_title_theme.yy",
-                "resourceType": "GMSound"
+                "id": "e4c282e9-efe7-4abf-b1fd-71fe3e164bfb",
+                "resourcePath": "scripts\\match_three\\match_three.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -391,14 +383,6 @@
             }
         },
         {
-            "Key": "f1909da5-66f7-43c8-82dd-4ee856f307f8",
-            "Value": {
-                "id": "8e8739f3-91ab-4e6f-a589-ab082763d820",
-                "resourcePath": "sounds\\sound_game_over\\sound_game_over.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "39a75a50-a411-4f16-a813-0b7e8c868263",
@@ -444,7 +428,8 @@
         "67d68bf9-0ade-4037-95dc-3d10a94d9c65",
         "a30ab565-ddfc-4385-91b5-aff2c0506bd7",
         "c8846ef8-ca34-4507-9181-fa6adc03206f",
-        "4662eda9-7d45-4613-a83f-ccbfb39401f1"
+        "97dce189-d718-4c76-a3d9-775b24c91782",
+        "007d8366-1951-4cc4-9321-33a4aff4873c"
     ],
     "tutorial": ""
 }

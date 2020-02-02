@@ -44,37 +44,30 @@ if(is_thrown)
 		
 		if (collision_line(64, 63, 191, 63, obj_next_brick, false, false)) {
 			newx = 64
-			show_debug_message("AREA 1")
 		}
 		
 		else if (collision_line(192, 63, 319, 63, obj_next_brick, false, false)) {
 			newx = 192
-			show_debug_message("AREA 2")
 		}
 		
 		else if (collision_line(320, 63, 447, 63, obj_next_brick, false, false)) {
 			newx = 320
-			show_debug_message("AREA 3")
 		}
 		
 		else if (collision_line(448, 63, 575, 63, obj_next_brick, false, false)) {
 			newx = 448
-			show_debug_message("AREA 4")
 		}
 		
 		else if (collision_line(576, 63, 703, 63, obj_next_brick, false, false)) {
 			newx = 576
-			show_debug_message("AREA 5")
 		}
 		
 		else if (collision_line(704, 63, 831, 63, obj_next_brick, false, false)) {
 			newx = 704
-			show_debug_message("AREA 6")
 		}
 		
 		else {
 			newx = 832
-			show_debug_message("AREA 7")
 		}
 		
 		

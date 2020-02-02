@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "7f82a207-3bec-42f5-8990-38a1380d3ce8",
+            "Value": {
+                "id": "9394d36f-2233-4442-91b3-25f0cf91f512",
+                "resourcePath": "sounds\\sound_game_theme\\sound_game_theme.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "93a3f9fd-fe4f-4b95-87c9-985b7b7cb264",
             "Value": {
                 "id": "77634931-0d9f-4a53-bed5-3370d0e61f66",
@@ -247,6 +255,14 @@
             }
         },
         {
+            "Key": "ae9eefe9-a46e-4b66-b050-539fcd9d73b5",
+            "Value": {
+                "id": "d8a05906-30ec-4d37-ade3-04361960f0e1",
+                "resourcePath": "sounds\\sound_game_over\\sound_game_over.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "b4758bca-784b-45bd-85d4-421f1c2bb7e0",
             "Value": {
                 "id": "f19792b7-23ec-4bdb-b109-1074d5138e79",
@@ -260,6 +276,14 @@
                 "id": "e3ad2771-2514-4eac-bf5d-8596ed73b4c3",
                 "resourcePath": "sprites\\spr_cracked_brick3\\spr_cracked_brick3.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b9056c1a-8e5b-42ea-978b-818638c651aa",
+            "Value": {
+                "id": "0ffde842-4c1e-472b-9c7a-bf77334b7d90",
+                "resourcePath": "sounds\\sound_title_theme\\sound_title_theme.yy",
+                "resourceType": "GMSound"
             }
         },
         {

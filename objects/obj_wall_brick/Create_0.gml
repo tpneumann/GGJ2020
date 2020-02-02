@@ -14,4 +14,4 @@ if (global.brick_id != undefined) {
 else {
 	alarm[1] = 1
 }*/
-
+debug_check_positions = ds_list_create()

@@ -40,6 +40,9 @@ if(is_thrown)
 
 	new_brick.brick_type = brick_type
 	set_wall_brick_color(new_brick)
+	
+	//check circles
+	new_brick.draw_check_circles = true
 
 	//create the lists for dfs
 	var bricks_to_check = ds_list_create()
@@ -57,7 +60,10 @@ if(is_thrown)
 			instance_destroy(ds_list_find_value(bricks_checked, i)) 
 		}
 	}
-
+	
+	ds_list_destroy(bricks_to_check)
+	ds_list_destroy(bricks_checked)
+	
 	with (obj_brick_thrower) spawn_next_brick()
 
 }

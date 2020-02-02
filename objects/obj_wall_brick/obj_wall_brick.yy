@@ -65,6 +65,20 @@
             "value": "1",
             "varName": "brick_type",
             "varType": 1
+        },
+        {
+            "id": "efe0f544-06e2-443c-ad73-6af437954a79",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "draw_check_circles",
+            "varType": 3
         }
     ],
     "solid": false,

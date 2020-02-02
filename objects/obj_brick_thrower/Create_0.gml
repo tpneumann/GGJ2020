@@ -15,6 +15,8 @@ rotate_this_frame = 0
 //holds can throw
 global.can_throw = true
 
+global.brick_id = 0
+
 //hold reference to next brick
 next_brick = 0
 

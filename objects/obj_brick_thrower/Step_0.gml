@@ -22,7 +22,8 @@ if(global.can_throw)
 }
 
 
-if (keyboard_check(vk_space) && global.can_throw) {
+if (keyboard_check_pressed(vk_space) && global.can_throw) {
 	toss_brick()
 }
+
 

@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "7f82a207-3bec-42f5-8990-38a1380d3ce8",
+            "Value": {
+                "id": "9394d36f-2233-4442-91b3-25f0cf91f512",
+                "resourcePath": "sounds\\sound_game_theme\\sound_game_theme.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "93a3f9fd-fe4f-4b95-87c9-985b7b7cb264",
             "Value": {
                 "id": "77634931-0d9f-4a53-bed5-3370d0e61f66",

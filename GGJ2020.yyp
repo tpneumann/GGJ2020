@@ -493,6 +493,14 @@
                 "resourcePath": "views\\fa75fef1-0c4f-47ab-8f00-85aed57daa30.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fdda6986-d00c-445f-a05a-83700730eca7",
+            "Value": {
+                "id": "e3a72c65-7125-4cb8-8668-cdb4d2ecce76",
+                "resourcePath": "rooms\\rm_test_thrower_t1\\rm_test_thrower_t1.yy",
+                "resourceType": "GMRoom"
+            }
         }
     ],
     "script_order": [

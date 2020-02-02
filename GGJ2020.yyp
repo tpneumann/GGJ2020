@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "d7ae6c68-80e7-4912-9f32-b6885f7ddd0e",
+            "Value": {
+                "id": "13b7f9f1-a686-46cc-96d1-767a2f8bbf76",
+                "resourcePath": "objects\\obj_ceiling\\obj_ceiling.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "da234979-da34-4542-aba6-ec40f3478960",
             "Value": {
                 "id": "cd6de239-f510-449b-ba58-81925ea0ccec",

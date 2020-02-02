@@ -3,36 +3,75 @@
 
 if(is_thrown)
 {
-    
-	var newx = other.x, newy = other.y
-	var bbox_width = other.bbox_right - other.bbox_left
-	//var bbox_height = other.bbox_bottom - other.bbox_top
+	if (brick_type != 0) {
+		#region brick collisions
+		var newx = other.x, newy = other.y
+		var bbox_width = other.bbox_right - other.bbox_left
+		//var bbox_height = other.bbox_bottom - other.bbox_top
 	
-	if (collision_line(other.bbox_left, other.bbox_bottom, other.bbox_left + (bbox_width/2), other.bbox_bottom, obj_next_brick, true, false) != noone)//Bottom Left
-	{		
-		newx = other.x - 64
-		newy = other.y + 64
-		show_debug_message("BOTTOM LEFT")
+		if (collision_line(other.bbox_left, other.bbox_bottom, other.bbox_left + (bbox_width/2), other.bbox_bottom, obj_next_brick, true, false) != noone)//Bottom Left
+		{		
+			newx = other.x - 64
+			newy = other.y + 64
+			show_debug_message("BOTTOM LEFT")
+		}
+		else if (collision_line(other.bbox_left, other.bbox_top, other.bbox_left, other.bbox_bottom, obj_next_brick, true, false) != noone)//Left
+		{
+			newx = other.x - 128
+			show_debug_message("LEFT")
+		} 
+		else if (collision_line(other.bbox_left  + (bbox_width/2), other.bbox_bottom, other.bbox_right, other.bbox_bottom, obj_next_brick, true, false) != noone)//Bottom Right
+		{
+			newx = other.x + 64
+			newy = other.y + 64
+			show_debug_message("BOTTOM RIGHT")
+		}
+		else if (collision_line(other.bbox_right, other.bbox_bottom, other.bbox_right, other.bbox_top, obj_next_brick, true, false) != noone) //Right
+		{
+			newx = other.x + 128
+			show_debug_message("RIGHT")
+		}
+		else
+		{
+			show_debug_message("Error, no line")
+		}
+		#endregion
 	}
-	else if (collision_line(other.bbox_left, other.bbox_top, other.bbox_left, other.bbox_bottom, obj_next_brick, true, false) != noone)//Left
-	{
-		newx = other.x - 128
-		show_debug_message("LEFT")
-	} 
-	else if (collision_line(other.bbox_left  + (bbox_width/2), other.bbox_bottom, other.bbox_right, other.bbox_bottom, obj_next_brick, true, false) != noone)//Bottom Right
-	{
-		newx = other.x + 64
-		newy = other.y + 64
-		show_debug_message("BOTTOM RIGHT")
-	}
-	else if (collision_line(other.bbox_right, other.bbox_bottom, other.bbox_right, other.bbox_top, obj_next_brick, true, false) != noone) //Right
-	{
-		newx = other.x + 128
-		show_debug_message("RIGHT")
-	}
-	else
-	{
-		show_debug_message("Error, no line")
+	
+	else {
+		#region ceiling collisions
+		newy = 64
+		
+		if (collision_line(64, 63, 191, 63, obj_next_brick, false, false)) {
+			newx = 64
+		}
+		
+		else if (collision_line(192, 63, 319, 63, obj_next_brick, false, false)) {
+			newx = 192
+		}
+		
+		else if (collision_line(320, 63, 447, 63, obj_next_brick, false, false)) {
+			newx = 320
+		}
+		
+		else if (collision_line(448, 63, 575, 63, obj_next_brick, false, false)) {
+			newx = 448
+		}
+		
+		else if (collision_line(576, 63, 703, 63, obj_next_brick, false, false)) {
+			newx = 576
+		}
+		
+		else if (collision_line(704, 63, 831, 63, obj_next_brick, false, false)) {
+			newx = 704
+		}
+		
+		else {
+			newx = 832
+		}
+		
+		
+		#endregion
 	}
 	
 	
@@ -44,7 +83,8 @@ if(is_thrown)
 	//show_debug_message("New brick initial type: " + string(brick_type))
 	set_wall_brick_color(new_brick)
 
-	//create the lists for dfs
+	#region check for match 3
+	//create the lists for bfs
 	var bricks_to_check = ds_list_create()
 	ds_list_add(bricks_to_check, new_brick)
 		
@@ -65,7 +105,9 @@ if(is_thrown)
 	ds_list_destroy(bricks_to_check)
 	ds_list_destroy(bricks_checked)
 	
+	#endregion
 	
+	check_win()
 	
 	with (obj_brick_thrower) spawn_next_brick()
 

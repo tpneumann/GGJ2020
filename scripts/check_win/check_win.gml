@@ -24,3 +24,6 @@ for (var i = 0; i < 5; i++) {
 	odd_row = !odd_row
 }
 
+show_debug_message("GAME WIN!")
+return true
+

@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "e9b20c7c-84bc-4313-84b6-91817307d7e4",
+            "Value": {
+                "id": "a45b6642-8c58-4a8d-b46b-05d806d8bdbf",
+                "resourcePath": "rooms\\rm_test_thrower_tmusic\\rm_test_thrower_tmusic.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "ee3d4d58-92fe-4d7a-aebe-8fb274d073aa",
             "Value": {
                 "id": "56dd1549-dba1-4200-be9a-5034a53e9b92",

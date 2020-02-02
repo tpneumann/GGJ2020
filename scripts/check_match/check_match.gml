@@ -1,9 +1,10 @@
 
-//argument0: to check
+//argument0: to check around
 //argument1: been checked
 //argument2: the brick to check
 
 if (argument2 != noone) {
+	show_debug_message("arg2type: " + string(argument2.brick_type) + " selftype: " + string(brick_type) + " arg2x: " + string(argument2.x) + " arg2y: " + string(argument2.y))
 	if (argument2.brick_type == brick_type) {
 		var been_checked = false
 	

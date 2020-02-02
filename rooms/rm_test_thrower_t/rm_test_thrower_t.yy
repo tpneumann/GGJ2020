@@ -2,7 +2,7 @@
 {
     "name": "rm_test_thrower_t",
     "id": "bd6714ea-616f-4bbb-a7d2-3192aedf6c5c",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

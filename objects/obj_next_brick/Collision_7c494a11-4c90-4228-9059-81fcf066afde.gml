@@ -93,10 +93,10 @@ if(is_thrown)
 	
 	//holds list of bricks to delete
 	match_three(bricks_to_check, bricks_checked, 0)
-	var placed_sound = true
+	var placed_brick = true
 	//delete matches
 	if (ds_list_size(bricks_checked) >= 3) {
-		placed_sound = false
+		placed_brick = false
 		for (var i = 0; i < ds_list_size(bricks_checked); i++) {
 			//show_debug_message("newtype: " + string(brick_type) + " desttype: " + string(ds_list_find_value(bricks_checked, i).brick_type))
 			instance_destroy(ds_list_find_value(bricks_checked, i)) 
@@ -104,16 +104,18 @@ if(is_thrown)
 		}
 	}
 	
-	if (placed_sound) {
+	if (placed_brick) {
 		audio_play_sound(sound_brick_placed, 1, false)
-	}
+	}	
 	
 	ds_list_destroy(bricks_to_check)
 	ds_list_destroy(bricks_checked)
 	
 	#endregion
 	
-	check_win()
+	if (check_win()) {
+		room_goto(rm_game_win)
+	}
 	
 	with (obj_brick_thrower) spawn_next_brick()
 

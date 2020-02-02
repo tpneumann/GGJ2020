@@ -2,7 +2,7 @@
 {
     "name": "rm_test_thrower_t_music",
     "id": "c5b99e0f-a4c2-4a9e-8c18-b352dd685286",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

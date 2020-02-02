@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "40528607-5132-4d6a-8e07-f88c5c8416d1",
+            "Value": {
+                "id": "de1cab6b-b1dd-4484-8f90-5fcb0e2c5f43",
+                "resourcePath": "objects\\obj_win_screen\\obj_win_screen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4c2ad648-441b-453e-a0c9-0b01c17e8121",
             "Value": {
                 "id": "c64d574f-aab3-4d3a-a7a6-e08dde9635b9",
@@ -116,6 +124,14 @@
                 "id": "7c3a8786-0212-4322-85db-7e86bfe344c9",
                 "resourcePath": "views\\5462d882-4673-4cdb-bad9-91797595c004.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5c62a258-2078-45ad-92b6-3dde571e4a25",
+            "Value": {
+                "id": "80757837-b78d-41e8-82d7-d2e209ac346f",
+                "resourcePath": "sprites\\spr_win_screen\\spr_win_screen.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -164,6 +180,22 @@
                 "id": "773ee384-4601-499b-9a38-db2573fb31ed",
                 "resourcePath": "sprites\\spr_next_brick\\spr_next_brick.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6a7ff33b-8e7e-46fc-9f7e-3b9712436d42",
+            "Value": {
+                "id": "0b692cc8-3e31-441c-b1c2-a3f69605ce8d",
+                "resourcePath": "views\\6a7ff33b-8e7e-46fc-9f7e-3b9712436d42.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "756f7615-57e9-42cb-8176-f69aca9043ad",
+            "Value": {
+                "id": "4c55e984-0555-4671-8d79-83d50706db6e",
+                "resourcePath": "rooms\\rm_game_win\\rm_game_win.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -292,6 +324,14 @@
                 "id": "d8a05906-30ec-4d37-ade3-04361960f0e1",
                 "resourcePath": "sounds\\sound_game_over\\sound_game_over.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "b284f2ee-7270-4f2f-a94f-90f861468680",
+            "Value": {
+                "id": "6ebb719e-f405-451c-926e-e89904efdacd",
+                "resourcePath": "objects\\obj_main_menu\\obj_main_menu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -452,6 +492,14 @@
                 "id": "4aa41d69-c151-48de-95c4-b924800121f8",
                 "resourcePath": "sprites\\spr_brick_thrower\\spr_brick_thrower.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "df6c4346-34a6-4c63-a465-705597d61f0f",
+            "Value": {
+                "id": "b7acac7e-3560-4eb7-b573-164ab7a1d903",
+                "resourcePath": "rooms\\rm_game_start\\rm_game_start.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

@@ -54,7 +54,7 @@ if(is_thrown)
 	//delete matches
 	if (ds_list_size(bricks_checked) >= 3) {
 		for (var i = 0; i < ds_list_size(bricks_checked); i++) {
-			instance_destroy(ds_list_find_index(bricks_checked, i)) 
+			instance_destroy(ds_list_find_value(bricks_checked, i)) 
 		}
 	}
 

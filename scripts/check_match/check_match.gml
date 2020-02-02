@@ -11,7 +11,7 @@ if (argument2 != noone) {
 			//show_debug_message("for loop ran" + string(i))
 			//show_debug_message("argument1 and argument2" + string(ds_list_find_index(argument1, i)) + " " + string(argument2))
 			//if (argument2 == ds_list_find_value(argument1, i)) {
-			show_debug_message(string(ds_list_find_index(argument1, argument2)))
+			show_debug_message("ds_list_index: " + string(ds_list_find_index(argument1, argument2)))
 			if (ds_list_find_index(argument1, argument2) != -1) {
 			
 			/*if (argument2.x == ds_list_find_index(argument1, i).x &&
@@ -20,12 +20,11 @@ if (argument2 != noone) {
 				
 			//if (argument2.brick_num == ds_list_find_index(argument1, i).brick_num) {
 				been_checked = true
-				show_debug_message("ds_list_index: " + string(ds_list_find_index(argument1, i)))
 			}
 		}
 	
 		if (!been_checked) {
-			show_debug_message("been checked x: " + string(argument2.x) + ", y: " + string(argument2.y))
+			show_debug_message("Adding to to_check list x: " + string(argument2.x) + ", y: " + string(argument2.y) + "     List new size: " + string(ds_list_size(argument1)+1))
 			ds_list_add(argument0, argument2)
 		}
 	}

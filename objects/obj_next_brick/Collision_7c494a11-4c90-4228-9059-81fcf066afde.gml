@@ -41,7 +41,7 @@ if(is_thrown)
 	var new_brick = instance_create_layer(newx,newy,"Instances", obj_wall_brick)
 
 	new_brick.brick_type = brick_type
-	show_debug_message("New brick initial type: " + string(brick_type))
+	//show_debug_message("New brick initial type: " + string(brick_type))
 	set_wall_brick_color(new_brick)
 
 	//create the lists for dfs
@@ -57,13 +57,16 @@ if(is_thrown)
 	//delete matches
 	if (ds_list_size(bricks_checked) >= 3) {
 		for (var i = 0; i < ds_list_size(bricks_checked); i++) {
-			show_debug_message("newtype: " + string(brick_type) + " desttype: " + string(ds_list_find_value(bricks_checked, i).brick_type))
+			//show_debug_message("newtype: " + string(brick_type) + " desttype: " + string(ds_list_find_value(bricks_checked, i).brick_type))
 			instance_destroy(ds_list_find_value(bricks_checked, i)) 
 		}
 	}
 	
 	ds_list_destroy(bricks_to_check)
 	ds_list_destroy(bricks_checked)
+	
+	
+	
 	with (obj_brick_thrower) spawn_next_brick()
 
 }

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var debug_draw_bbox = true
+var debug_draw_bbox = false
 
 if(debug_draw_bbox)
 {

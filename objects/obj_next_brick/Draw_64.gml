@@ -2,7 +2,7 @@
 // You can write your code in this editor
 var debug_draw_bbox = false
 
-draw_circle(x, y, 3, false)
+//draw_circle(x, y, 3, false)
 
 if(debug_draw_bbox)
 {

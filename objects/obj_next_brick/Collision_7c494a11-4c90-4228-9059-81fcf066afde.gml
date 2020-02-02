@@ -44,37 +44,30 @@ if(is_thrown)
 		
 		if (collision_line(64, 63, 191, 63, obj_next_brick, false, false)) {
 			newx = 64
-			show_debug_message("AREA 1")
 		}
 		
 		else if (collision_line(192, 63, 319, 63, obj_next_brick, false, false)) {
 			newx = 192
-			show_debug_message("AREA 2")
 		}
 		
 		else if (collision_line(320, 63, 447, 63, obj_next_brick, false, false)) {
 			newx = 320
-			show_debug_message("AREA 3")
 		}
 		
 		else if (collision_line(448, 63, 575, 63, obj_next_brick, false, false)) {
 			newx = 448
-			show_debug_message("AREA 4")
 		}
 		
 		else if (collision_line(576, 63, 703, 63, obj_next_brick, false, false)) {
 			newx = 576
-			show_debug_message("AREA 5")
 		}
 		
 		else if (collision_line(704, 63, 831, 63, obj_next_brick, false, false)) {
 			newx = 704
-			show_debug_message("AREA 6")
 		}
 		
 		else {
 			newx = 832
-			show_debug_message("AREA 7")
 		}
 		
 		
@@ -100,13 +93,19 @@ if(is_thrown)
 	
 	//holds list of bricks to delete
 	match_three(bricks_to_check, bricks_checked, 0)
-	
+	var placed_sound = true
 	//delete matches
 	if (ds_list_size(bricks_checked) >= 3) {
+		placed_sound = false
 		for (var i = 0; i < ds_list_size(bricks_checked); i++) {
 			//show_debug_message("newtype: " + string(brick_type) + " desttype: " + string(ds_list_find_value(bricks_checked, i).brick_type))
 			instance_destroy(ds_list_find_value(bricks_checked, i)) 
+			audio_play_sound(sound_brick_smashed, 1, false)
 		}
+	}
+	
+	if (placed_sound) {
+		audio_play_sound(sound_brick_placed, 1, false)
 	}
 	
 	ds_list_destroy(bricks_to_check)
